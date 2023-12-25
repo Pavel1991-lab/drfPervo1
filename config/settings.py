@@ -93,11 +93,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'home',
-        'USER': 'pavel',
+        'USER': 'paha',
         'PASSWORD': os.getenv("PASSWORD"),
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

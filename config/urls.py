@@ -49,7 +49,7 @@ urlpatterns = [
     path('lesson', include('lesson.urls', namespace='lesson')),
     path('users/', include('users.urls', namespace='users')),
     path('subscription/', include('subscription.urls', namespace='subscription')),
-    path('payment', include('payment.urls', namespace='payment')),
+    path('payment/', include('payment.urls', namespace='payment')),
 
 
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
